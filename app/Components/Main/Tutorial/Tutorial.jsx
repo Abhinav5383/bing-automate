@@ -15,8 +15,8 @@ const Tutorial = ({
       <div className="wrap">
         <div className="bg"></div>
 
-        <div className="content" id={elem_ids.tutorial_popup} onClick={() => { setCurrent_popUp("") }}>
-          <div className="close_button">
+        <div className="content" id={elem_ids.tutorial_popup}>
+          <div className="close_button" onClick={() => { setCurrent_popUp("") }}>
             < CloseIcon />
           </div>
 
