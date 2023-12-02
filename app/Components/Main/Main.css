@@ -1,0 +1,132 @@
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  color: var(--general-font-color);
+}
+
+main .top_section {
+  width: 100%;
+}
+
+main .top_section .heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  margin-top: 0.4rem;
+  padding: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--general-font-color);
+  font-family: var(--general-font-family);
+  transition: var(--theme-change-transition);
+}
+
+/* Social links */
+
+.social_links {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  background-color: var(--nav-bg-color);
+  transition: var(--theme-change-transition);
+}
+
+.social_links .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.social_links .wrap .link {
+  height: 1.4rem;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.social_links .wrap .link svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--general-font-family);
+  color: var(--general-font-family);
+  width: 100%;
+  height: 100%;
+  transition: scale 200ms ease-out;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social_links .wrap .link:hover svg,
+.social_links .wrap .link:focus-visible svg {
+  scale: 1.1;
+}
+
+.social_links .wrap .discord svg {
+  fill: var(--discord-purple);
+  color: var(--discord-purple);
+}
+
+.social_links .wrap .instagram svg {
+  width: 90%;
+  height: 90%;
+}
+
+.social_links .wrap .youtube svg {
+  fill: var(--youtube-red);
+  color: var(--youtube-red);
+}
+
+
+
+
+/* Tutorial trigger button */
+
+main .tutorial_trigger {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  height: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--nav-bg-color);
+  font-family: var(--general-font-family);
+  transition: var(--theme-change-transition);
+  z-index: 6;
+}
+
+main .tutorial_trigger:hover,
+main .tutorial_trigger:focus-visible {
+  background-color: var(--equal-btn-bg);
+}
+
+main .tutorial_trigger:focus-visible {
+  outline: var(--general-font-color);
+  outline: var(--focus-outline);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  main .top_section .heading {
+    font-size: 1.4rem;
+  }
+}

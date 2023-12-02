@@ -1,0 +1,172 @@
+.search_maker {
+  font-family: var(--general-font-family);
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
+  width: 100%;
+  min-height: calc(100vh - var(--navitem-height) - calc(2 * var(--nav_padding)));
+  min-height: calc(100dvh - var(--navitem-height) - calc(2 * var(--nav_padding)));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  --input_width: 100%;
+  --input_padding: 0.8rem;
+  --unit_margin: 0.3rem;
+  --unit_padding: 0.8rem;
+  --focus-outline: 0.1rem solid var(--general-font-color);
+}
+
+.container {
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.opener_form {
+  border-radius: 0.3rem;
+  padding: .8rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--button-grid-bg);
+  transition: var(--theme-change-bg-transition), var(--theme-change-box-shadow-transition);
+  box-shadow: 0px 0px 50px var(--frame-shadow-clr);
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.6rem;
+}
+
+.controls .input_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input_box .row {
+  margin: 0.15rem 0;
+  height: 2.4rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.input_box .row label {
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: var(--general-font-color);
+  user-select: none;
+  transition: var(--theme-change-transition);
+}
+
+
+.input_box .row input {
+  padding: 0 var(--input_padding);
+  font-size: 1.3rem;
+  border-radius: 0.2rem;
+  height: 100%;
+  width: var(--input_width);
+  font-family: monospace;
+  border: none;
+  color: var(--text-color);
+  background-color: var(--display-bg);
+  transition: var(--theme-change-transition);
+  -moz-appearance: textfield;
+}
+
+.input_box .row input:focus {
+  outline: var(--focus-outline);
+}
+
+.input_box .row input::-webkit-outer-spin-button,
+.input_box .row input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+.input_box .btn {
+  font-family: var(--general-font-family);
+  font-size: 2rem;
+  padding: 0 1rem;
+  height: 100%;
+  border-radius: 0.2rem;
+  color: var(--text-color);
+  background-color: var(--display-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition: var(--theme-change-transition);
+}
+
+.input_box .btn:focus-visible {
+  outline: var(--focus-outline);
+}
+
+.input_box .btn.minus {
+  margin-right: var(--unit_margin);
+}
+
+.input_box .btn.plus {
+  margin-left: var(--unit_margin);
+}
+
+.input_box .btn:active {
+  color: var(--btn-active-color);
+}
+
+
+
+/* Buttons */
+
+.buttons {
+  width: 100%;
+  height: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0.6rem 0;
+}
+
+.buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons .btn button {
+  width: 95%;
+  height: 100%;
+  border: none;
+  background-color: var(--equal-btn-bg);
+  color: var(--text-color);
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: var(--theme-change-transition);
+  user-select: none;
+  font-family: var(--general-font-family);
+}
+
+.buttons .btn button:active {
+  color: var(--btn-active-color);
+}
+
+.buttons .btn button:focus-visible {
+  outline: var(--focus-outline);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
