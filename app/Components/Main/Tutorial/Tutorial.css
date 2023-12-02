@@ -92,6 +92,7 @@
   width: 100%;
   font-size: 1.4rem;
   padding: 0.6rem 0;
+  padding-top: 1.4rem;
   color: var(--general-font-color);
   display: flex;
   align-items: center;
@@ -105,7 +106,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 25%);
   height: 2rem;
   width: 2rem;
   aspect-ratio: 1 / 1;
@@ -169,8 +170,13 @@
   transition: var(--theme-change-transition);
 }
 
-.tutorial .content .section_three {
+.tutorial .content .section_two {
   margin-top: 1.8rem;
+}
+
+.tutorial .content .section_three {
+  margin-top: 2.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .tutorial .content .section_three .point {
