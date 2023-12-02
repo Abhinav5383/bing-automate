@@ -6,6 +6,7 @@ import Main from './Components/Main/Main';
 import { delay_values, elem_ids } from './Utils/States';
 import "./globals.css"
 import Tutorial from './Components/Main/Tutorial/Tutorial';
+import Script from 'next/script';
 
 
 const App = () => {
@@ -107,6 +108,11 @@ const App = () => {
         setSearch_count={setSearch_count}
       />
 
+      < Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8708861413425372"
+        crossorigin="anonymous"
+      />
 
     </div>
   )

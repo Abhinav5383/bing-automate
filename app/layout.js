@@ -14,8 +14,6 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="app/favicon.ico" sizes="any" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8708861413425372"
-          crossorigin="anonymous"></script>
       </head>
 
       <body>{children}</body>
