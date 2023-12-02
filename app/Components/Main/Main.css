@@ -7,6 +7,14 @@ main {
   color: var(--general-font-color);
 }
 
+@media screen and (min-width: 1020px) {
+  main {
+    width: 65%;
+  }
+}
+
+
+
 main .top_section {
   width: 100%;
 }

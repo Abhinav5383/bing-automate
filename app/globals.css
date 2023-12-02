@@ -22,6 +22,9 @@ html:has(#app.dark) {
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   --discord-purple: #5865f2;
   --youtube-red: #ed1d24;
