@@ -4,8 +4,9 @@ import React, { useEffect, useState } from 'react';
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
 import { delay_values, elem_ids } from './Utils/States';
-import "./globals.css"
 import Tutorial from './Components/Main/Tutorial/Tutorial';
+import Script from 'next/script';
+import "./globals.css"
 
 
 const App = () => {
@@ -87,6 +88,15 @@ const App = () => {
 
   return (
     <div id="app" className={`${curr_theme}`} onClick={handle_document_click}>
+
+      <Script
+        async="true"
+        id="adsbygoogle-init"
+        strategy="afterInteractive"
+        crossOrigin="anonymous"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        onError={(e) => { console.log(`Script failed to load \n ${e}`); }}
+      />
 
       < Tutorial
         current_popUp={current_popUp}
