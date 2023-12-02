@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ctrl/react-adsense": "^1.7.0",
     "next": "14.0.3",
     "random-words": "^2.0.0",
     "react": "^18",

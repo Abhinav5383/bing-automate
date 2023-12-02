@@ -6,7 +6,6 @@ import Main from './Components/Main/Main';
 import { delay_values, elem_ids } from './Utils/States';
 import "./globals.css"
 import Tutorial from './Components/Main/Tutorial/Tutorial';
-import Script from 'next/script';
 
 
 const App = () => {
@@ -79,6 +78,7 @@ const App = () => {
     }
   }
 
+
   return (
     <div id="app" className={`${curr_theme}`} onClick={handle_document_click}>
 
@@ -106,13 +106,6 @@ const App = () => {
         setCurr_search_delay={setCurr_search_delay}
         search_count={search_count}
         setSearch_count={setSearch_count}
-      />
-
-      <Script
-        id="adsbygoogle-init"
-        strategy="afterInteractive"
-        crossOrigin="anonymous"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8708861413425372"
       />
 
     </div>
