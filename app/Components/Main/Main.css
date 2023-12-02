@@ -12,6 +12,13 @@ main {
   grid-template-columns: 3fr 5fr 3fr;
 }
 
+@media screen and (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
 
 /* ADSENSE SPACE  */
 
