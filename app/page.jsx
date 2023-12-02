@@ -90,11 +90,10 @@ const App = () => {
     <div id="app" className={`${curr_theme}`} onClick={handle_document_click}>
 
       <Script
-        async="true"
         id="adsbygoogle-init"
         strategy="afterInteractive"
         crossOrigin="anonymous"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8708861413425372"
         onError={(e) => { console.log(`Script failed to load \n ${e}`); }}
       />
 
