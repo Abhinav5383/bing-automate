@@ -1,31 +1,22 @@
-import React, { useEffect } from 'react'
-import { Adsense } from '@ctrl/react-adsense'
+import React, { useEffect } from 'react';
 
-
-
-const Ad_banner = () => {
+const AdSense = () => {
 
   useEffect(() => {
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (err) {
-      console.log(err);
-    }
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
   }, []);
 
   return (
 
-    <div className=" adsbygoogle89 ads ">
-      <Adsense
-        client="ca-pub-8708861413425372"
-        slot="8767328021"
-        style={{ display: "block" }}
-        layout="in-article"
-        format="auto"
-      />
-    </div>
+    <ins
+      class="adsbygoogle"
+      style={{ display: 'block' }}
+      data-ad-client="ca-pub-8708861413425372"
+      data-ad-slot="8767328021"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    />
+  );
+};
 
-  )
-}
-
-export default Ad_banner
+export default AdSense;

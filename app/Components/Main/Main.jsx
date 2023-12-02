@@ -4,10 +4,8 @@ import SearchMakerCard from "./SearchMakerCard"
 import DiscordIcon from "@/public/assets/DiscordIcon"
 import InstaIcon from "@/public/assets/InstaIcon"
 import YoutubeIcon from "@/public/assets/YoutubeIcon"
+import Script from "next/script"
 import { elem_ids } from "@/app/Utils/States"
-import Ad_banner from "../AdSense/Ads"
-
-
 
 
 const Main = ({
@@ -24,7 +22,13 @@ const Main = ({
   return (
     <main>
       <div className="adsense_space" id="adsense-one">
-        < Ad_banner />
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-8708861413425372"
+          data-ad-slot="8767328021"
+          data-ad-format="auto"
+        />
       </div>
 
       <div className="main_content">
@@ -64,7 +68,13 @@ const Main = ({
       </div>
 
       <div className="adsense_space" id="adsense-two">
-        < Ad_banner />
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-8708861413425372"
+          data-ad-slot="8767328021"
+          data-ad-format="auto"
+        />
       </div>
 
     </main>

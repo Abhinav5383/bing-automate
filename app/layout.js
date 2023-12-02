@@ -17,15 +17,19 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="app/favicon.ico" sizes="any" />
-        <Script
-          id="adsbygoogle-init"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8708861413425372"
+
+        <link
+          rel="stylesheet"
+          href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.css"
         />
+
+
       </Head>
 
-      <body>{children}</body>
+      <body>
+        {children}
+
+      </body>
 
     </html>
   )

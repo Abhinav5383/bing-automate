@@ -10,6 +10,7 @@ import Tutorial from './Components/Main/Tutorial/Tutorial';
 
 const App = () => {
 
+
   const themes = {
     light: "light",
     dark: "dark"
@@ -53,6 +54,7 @@ const App = () => {
       setCurr_search_delay(delays[delay_style]);
     }
   }, [delay_style])
+
 
 
   const handle_document_click = (event) => {
