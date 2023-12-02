@@ -108,10 +108,11 @@ const App = () => {
         setSearch_count={setSearch_count}
       />
 
-      < Script
-        async
+      <Script
+        id="adsbygoogle-init"
+        strategy="afterInteractive"
+        crossOrigin="anonymous"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8708861413425372"
-        crossorigin="anonymous"
       />
 
     </div>
