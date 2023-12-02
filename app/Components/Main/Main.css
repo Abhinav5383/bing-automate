@@ -10,7 +10,7 @@ main {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
 
@@ -36,6 +36,7 @@ main {
 main .main_content {
   margin: 0;
   padding: 0;
+  padding: 2rem 0;
   box-sizing: border-box;
   position: relative;
   color: var(--general-font-color);
@@ -71,6 +72,7 @@ main .top_section .heading {
   border-radius: 0.3rem;
   background-color: var(--nav-bg-color);
   transition: var(--theme-change-transition);
+  z-index: 6;
 }
 
 .social_links .wrap {
