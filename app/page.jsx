@@ -60,22 +60,9 @@ const App = () => {
   const handle_document_click = (event) => {
     if (current_popUp) {
 
-      let another_popup_found = false;
-      let array = Object.values(elem_ids);
-
-      array.forEach((id) => {
-        if (event.target.closest(`.${id}`) && id !== current_popUp) {
-          another_popup_found = true;
-          setTimeout(() => {
-            setCurrent_popUp(id);
-          }, 50);
-        }
-      })
-
-      if (!event.target.closest(`#${current_popUp}`) && !another_popup_found) {
+      if (!event.target.closest(`#${current_popUp}`)) {
         setCurrent_popUp("");
       }
-
 
     }
   }
