@@ -19,6 +19,10 @@ const Main = ({
 }) => {
 
 
+  useEffect(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }, [])
+
   return (
     <main>
       <div className="adsense_space" id="adsense-one">
