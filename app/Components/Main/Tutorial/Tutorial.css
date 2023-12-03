@@ -1,5 +1,4 @@
 .tutorial {
-  padding-bottom: 2rem;
   width: 100%;
   height: fit-content;
   color: var(--general-font-color);
@@ -7,6 +6,7 @@
 
   scale: 0;
   opacity: 0;
+  z-index: 20;
   transition: scale 0 var(--theme-change-duration), opacity calc(var(--theme-change-duration) * 3) ease-out;
 
   --wrap-width: 950px;
@@ -15,23 +15,14 @@
 .tutorial .wrap {
   width: 100%;
   height: 100%;
+  padding: 2rem 0;
+  background-color: var(--nav-bg-color);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-.tutorial .wrap .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #202325;
-  opacity: 0.6;
-  z-index: 22;
-}
 
 .tutorial.open {
   scale: 1;

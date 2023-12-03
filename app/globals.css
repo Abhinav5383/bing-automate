@@ -99,3 +99,7 @@ html:has(#app.dark) {
 #app {
   background-color: var(--main-bg-color);
 }
+
+a:focus-visible {
+  outline: var(--focus-outline);
+}

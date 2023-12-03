@@ -80,6 +80,7 @@ main .tutorial_trigger {
   font-family: var(--general-font-family);
   transition: var(--theme-change-transition);
   z-index: 6;
+
 }
 
 main .tutorial_trigger:hover,
