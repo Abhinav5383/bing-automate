@@ -7,6 +7,7 @@ import YoutubeIcon from "@/public/assets/YoutubeIcon"
 import Script from "next/script"
 import { elem_ids } from "@/app/Utils/States"
 import Promotion from "./Promotion/Promotion"
+import DownArrowIcon from "@/public/assets/DownArrowIcon"
 
 
 const Main = ({
@@ -63,9 +64,10 @@ const Main = ({
           </div>
         </section>
 
-        <div className="tutorial_trigger tutorial_popup" tabIndex={0} onClick={() => { setCurrent_popUp(elem_ids.tutorial_popup) }}>
-          <div className="text">How to use ?</div>
-        </div>
+        <a className="tutorial_trigger tutorial_popup" tabIndex={0} href="#tutorial">
+          <div className="text">How to use ? </div>
+          <div className="icon">< DownArrowIcon /></div>
+        </a>
       </div>
 
       <div className="adsense_space" id="adsense-two">

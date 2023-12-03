@@ -97,12 +97,6 @@ const App = () => {
         onError={(e) => { console.log(`Script failed to load \n ${e}`); }}
       />
 
-      < Tutorial
-        current_popUp={current_popUp}
-        setCurrent_popUp={setCurrent_popUp}
-      />
-
-
       < Header
         curr_theme={curr_theme}
         setCurr_theme={setCurr_theme}
@@ -122,6 +116,12 @@ const App = () => {
         search_count={search_count}
         setSearch_count={setSearch_count}
       />
+
+      < Tutorial
+        current_popUp={current_popUp}
+        setCurrent_popUp={setCurrent_popUp}
+      />
+
 
     </div>
   )

@@ -4,6 +4,7 @@ import CloseIcon from "@/public/assets/CloseIcon";
 import YoutubeIcon from "@/public/assets/YoutubeIcon";
 import DiscordIcon from "@/public/assets/DiscordIcon";
 import Promotion from "../Promotion/Promotion";
+import GithubIcon from "@/public/assets/GithubIcon";
 
 
 
@@ -14,15 +15,10 @@ const Tutorial = ({
 
 
   return (
-    <div className={`tutorial ${current_popUp === elem_ids.tutorial_popup ? "open" : "closed"}`}>
+    <div className={`tutorial open`}>
       <div className="wrap">
-        <div className="bg"></div>
 
-        <div className="content" id={elem_ids.tutorial_popup}>
-          <div className="close_button" onClick={() => { setCurrent_popUp("") }}>
-            < CloseIcon />
-          </div>
-
+        <div className="content" id="tutorial">
           <div className="heading">How to use Bing Automate to complete your daily searches ?</div>
 
           <div className="section_one section">
@@ -54,7 +50,15 @@ const Tutorial = ({
             <div className="section_content">
               <div className="point">1. Always use Incognito mode to collect points.</div>
               <div className="point">2. Never collect points in two accounts at same time from the same device.</div>
-              <div className="point">For more information refer to this &nbsp;<a href="https://github.com/Abhinav5383/Guide" target="blank">Guide</a></div>
+              <div className="point">For more information refer to this &nbsp;
+                <a href="https://github.com/Abhinav5383/Guide" target="blank">
+                  <div className="link_visual">
+                    <div className="icon">< GithubIcon /></div>
+                    <div className="text">Guide</div>
+                  </div>
+                </a>
+              </div>
+
               < Promotion />
             </div>
           </div>

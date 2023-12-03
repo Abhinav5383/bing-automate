@@ -74,7 +74,9 @@ main .tutorial_trigger {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none;
   background-color: var(--nav-bg-color);
+  color: var(--general-font-color);
   font-family: var(--general-font-family);
   transition: var(--theme-change-transition);
   z-index: 6;
@@ -88,6 +90,31 @@ main .tutorial_trigger:focus-visible {
 main .tutorial_trigger:focus-visible {
   outline: var(--general-font-color);
   outline: var(--focus-outline);
+}
+
+main .tutorial_trigger .text {
+  text-decoration: none;
+  color: var(--general-font-color);
+  font-family: var(--general-font-family);
+  transition: var(--theme-change-transition);
+}
+
+main .tutorial_trigger .icon {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.6rem;
+}
+
+main .tutorial_trigger .icon svg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--general-font-color);
 }
 
 
