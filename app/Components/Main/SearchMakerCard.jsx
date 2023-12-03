@@ -19,7 +19,7 @@ const SearchMakerCard = ({
 
   const [tabs_opening, setTabs_opening] = useState(false);
   const cvidLetters = "W32567778Y62959S39639A808674C81680413728H35O074354029X54I0E99442137J62U922584162758880T2MB1965VD79R4QV405015Z1KL1801G1427N6367350P1363F";
-  const LOGIN_URL = "https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=16&id=264960&wreply=https%3a%2f%2fwww.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fwww.bing.com%252f%253ftoWww%253d1%2526redig%253dD78462ACB05B4DB4881BBF8FB68ACBBF%2526wlexpsignin%253d1%26sig%3d1D451F909FFD6C76380F0C4A9EAF6D49%26nopa%3d2&wp=MBI_SSL&lc=1033&CSRFToken=91f08ad8-79f3-44fa-b071-403ad0eeb932&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&aadredir=1&nopa=2"
+  const LOGIN_URL = "https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=16&id=264960&wreply=https%3a%2f%2fwww.bing.com%2fsecure%2fPassport.aspx%3fedge_suppress_profile_switch%3d1%26requrl%3dhttps%253a%252f%252fwww.bing.com%252f%253ftoWww%253d1%2526redig%253d9044EF12948D468FB34C8DA3BE2D867E%2526wlexpsignin%253d1%26sig%3d30CAAE658C3467962BFBBDB98D7866C5%26nopa%3d2&wp=MBI_SSL&lc=1033&pcexp=false&CSRFToken=5dfa9228-3d3d-4c88-8a53-2b22b961658d&cobrandid=c333cba8-c15c-4458-b082-7c8ce81bee85&aadredir=1&nopa=2";
 
 
 
