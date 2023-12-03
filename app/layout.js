@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" href="app/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
         <link
           rel="stylesheet"
