@@ -1,6 +1,9 @@
 import { elem_ids } from "@/app/Utils/States";
 import "./Tutorial.css";
 import CloseIcon from "@/public/assets/CloseIcon";
+import YoutubeIcon from "@/public/assets/YoutubeIcon";
+import DiscordIcon from "@/public/assets/DiscordIcon";
+import Promotion from "../Promotion/Promotion";
 
 
 
@@ -49,8 +52,10 @@ const Tutorial = ({
             <div className="title">Important points</div>
 
             <div className="section_content">
-              <div className="point">1. Always use Incognito mode to grind points.</div>
-              <div className="point">2. Never grind points in two accounts at same time from the same device.</div>
+              <div className="point">1. Always use Incognito mode to collect points.</div>
+              <div className="point">2. Never collect points in two accounts at same time from the same device.</div>
+              <div className="point">For more information refer to this &nbsp;<a href="https://github.com/Abhinav5383/Guide" target="blank">Guide</a></div>
+              < Promotion />
             </div>
           </div>
 

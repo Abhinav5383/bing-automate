@@ -6,6 +6,7 @@ import InstaIcon from "@/public/assets/InstaIcon"
 import YoutubeIcon from "@/public/assets/YoutubeIcon"
 import Script from "next/script"
 import { elem_ids } from "@/app/Utils/States"
+import Promotion from "./Promotion/Promotion"
 
 
 const Main = ({
@@ -56,15 +57,11 @@ const Main = ({
           </div>
         </section>
 
-        <div className="social_links">
+        <section className="social_links">
           <div className="wrap">
-
-            <a className="discord link" href="https://discord.gg/G3QVgvwpxE">< DiscordIcon /></a>
-            <a className="youtube link" href="https://www.youtube.com/@shirtlessdigital">< YoutubeIcon /></a>
-            {/* <a className="instagram link" href="https://discord.gg/G3QVgvwpxE">< InstaIcon /></a> */}
-
+            < Promotion />
           </div>
-        </div>
+        </section>
 
         <div className="tutorial_trigger tutorial_popup" tabIndex={0} onClick={() => { setCurrent_popUp(elem_ids.tutorial_popup) }}>
           <div className="text">How to use ?</div>
