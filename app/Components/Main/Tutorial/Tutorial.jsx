@@ -82,8 +82,6 @@ const Tutorial = ({
                     </div>
                   </a>
                 </div>
-
-                < Promotion />
               </div>
             </div>
 

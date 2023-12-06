@@ -9,7 +9,7 @@
   z-index: 20;
   transition: scale 0 var(--theme-change-duration), opacity calc(var(--theme-change-duration) * 3) ease-out;
 
-  --wrap-width: 950px;
+  --wrap-width: 90%;
 }
 
 .tutorial .wrap {
@@ -33,7 +33,7 @@
 }
 
 .tutorial .wrap .content {
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: 0.6rem;
   z-index: 25;
   width: var(--wrap-width);

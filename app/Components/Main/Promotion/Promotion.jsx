@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Promotion.css"
-import YoutubeIcon from '@/public/assets/YoutubeIcon'
 import DiscordIcon from '@/public/assets/DiscordIcon'
 
 
@@ -33,13 +32,12 @@ const Promotion = () => {
 
     <div className="promotion">
 
-      < PromoLink
-        text={"Know more ways of earning"}
-        link={"https://www.youtube.com/@shirtlessdigital"}
-        Icon={< YoutubeIcon />}
-        name={"Shirtless Digital"}
-        icon_fill={"var(--youtube-red)"}
-      />
+      <a className="channel_link" href="https://www.youtube.com/@shirtlessdigital">
+        <div className="wrap">
+          <div className="channel_logo"></div>
+          <div className="channel_name">ShirtLess Digital</div>
+        </div>
+      </a>
 
       < PromoLink
         text={"Having problems ? Join us on discord"}

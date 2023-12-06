@@ -1,7 +1,7 @@
 main {
   width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 110vh;
+  min-height: 110dvh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,6 +36,34 @@ main .top_section .heading {
   padding: 0;
   font-size: 1.8rem;
   font-weight: 400;
+  color: var(--general-font-color);
+  font-family: var(--general-font-family);
+  transition: var(--theme-change-transition);
+}
+
+/* Card */
+
+main .main_content .search_maker {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .main_content .search_maker .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 0.6rem;
+}
+
+main .search_maker .estimated_time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--general-font-color);
   font-family: var(--general-font-family);
   transition: var(--theme-change-transition);

@@ -1,11 +1,11 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import "./Main.css"
 import SearchMakerCard from "./SearchMakerCard"
 import DiscordIcon from "@/public/assets/DiscordIcon"
 import InstaIcon from "@/public/assets/InstaIcon"
 import YoutubeIcon from "@/public/assets/YoutubeIcon"
 import Script from "next/script"
-import { elem_ids } from "@/app/Utils/States"
+import { delay_values, elem_ids } from "@/app/Utils/States"
 import Promotion from "./Promotion/Promotion"
 import DownArrowIcon from "@/public/assets/DownArrowIcon"
 
@@ -20,9 +20,46 @@ const Main = ({
   setSearch_count
 }) => {
 
+  const [ETA, setETA] = useState(0);
+
+  const find_ETA = (delay, searches) => {
+    let total_time = 0;
+    let mins = 0;
+    let seconds = 0;
+
+    if (delay_style === delay_values.random) {
+      let min = curr_search_delay.min;
+      let max = curr_search_delay.max;
+
+      delay = Math.floor(Math.random() * (max - min + 1)) + min;
+      delay = Math.round((delay / 1000) * 10) / 10
+    }
+
+    total_time = delay * searches;
+    mins = Math.floor(total_time / 60);
+    seconds = Math.floor(total_time % 60);
+
+    if (mins != 0) {
+      return `${mins}min ${seconds}s`
+    }
+    else if (mins == 0) {
+      return `${seconds}s`
+    }
+  }
 
   useEffect(() => {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
+    if ((!curr_search_delay) || (!search_count && search_count !== 0)) return;
+    let eta = find_ETA((curr_search_delay / 1000), search_count);
+    setETA(eta);
+
+  }, [curr_search_delay, search_count])
+
+
+  useEffect(() => {
+    if ((!curr_search_delay) || (!search_count && search_count !== 0)) return;
+    let eta = find_ETA((curr_search_delay / 1000), search_count);
+    setETA(eta);
+
   }, [])
 
   return (
@@ -47,6 +84,11 @@ const Main = ({
             />
 
           </div>
+
+          <div className="estimated_time">
+            Estimated time :- {ETA}
+          </div>
+
         </section>
 
         <section className="social_links">
