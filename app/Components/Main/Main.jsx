@@ -48,17 +48,32 @@ const Main = ({
   }
 
   useEffect(() => {
-    if ((!curr_search_delay) || (!search_count && search_count !== 0)) return;
-    let eta = find_ETA((curr_search_delay / 1000), search_count);
+    if (!curr_search_delay) return;
+
+    let eta = 0;
+    if (!search_count) {
+      eta = find_ETA((curr_search_delay / 1000), 0);
+    }
+    else {
+      eta = find_ETA((curr_search_delay / 1000), search_count);
+    }
     setETA(eta);
 
   }, [curr_search_delay, search_count])
 
 
   useEffect(() => {
-    if ((!curr_search_delay) || (!search_count && search_count !== 0)) return;
-    let eta = find_ETA((curr_search_delay / 1000), search_count);
+    if (!curr_search_delay) return;
+
+    let eta = 0;
+    if (!search_count) {
+      eta = find_ETA((curr_search_delay / 1000), 0);
+    }
+    else {
+      eta = find_ETA((curr_search_delay / 1000), search_count);
+    }
     setETA(eta);
+
 
   }, [])
 
