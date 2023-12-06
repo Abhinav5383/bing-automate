@@ -27,15 +27,6 @@ const Main = ({
 
   return (
     <main>
-      <div className="adsense_space" id="adsense-one">
-        <ins
-          className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-8708861413425372"
-          data-ad-slot="8767328021"
-          data-ad-format="auto"
-        />
-      </div>
 
       <div className="main_content">
         <section className="top_section">
@@ -68,16 +59,6 @@ const Main = ({
           <div className="text">How to use ? </div>
           <div className="icon">< DownArrowIcon /></div>
         </a>
-      </div>
-
-      <div className="adsense_space" id="adsense-two">
-        <ins
-          className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-8708861413425372"
-          data-ad-slot="8767328021"
-          data-ad-format="auto"
-        />
       </div>
 
     </main>

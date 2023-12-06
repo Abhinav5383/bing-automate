@@ -18,8 +18,8 @@ const App = () => {
   };
 
   const delays = {
-    default: 4500,
-    slow: 6000,
+    default: 5000,
+    slow: 7000,
     fast: 4000,
     random: {
       min: 4000,
@@ -89,20 +89,13 @@ const App = () => {
   return (
     <div id="app" className={`${curr_theme}`} onClick={handle_document_click}>
 
-      <Script
-        id="adsbygoogle-init"
-        strategy="afterInteractive"
-        crossOrigin="anonymous"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8708861413425372"
-        onError={(e) => { console.log(`Script failed to load \n ${e}`); }}
-      />
-
       < Header
         curr_theme={curr_theme}
         setCurr_theme={setCurr_theme}
         themes={themes}
         current_popUp={current_popUp}
         setCurrent_popUp={setCurrent_popUp}
+        delays={delays}
         delay_style={delay_style}
         setDelay_style={setDelay_style}
       />

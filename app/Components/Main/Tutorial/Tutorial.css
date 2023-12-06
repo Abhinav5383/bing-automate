@@ -21,6 +21,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  transition: var(--theme-change-transition);
 }
 
 
@@ -32,7 +35,6 @@
 .tutorial .wrap .content {
   padding: 1rem;
   border-radius: 0.6rem;
-  background-color: var(--nav-bg-color);
   z-index: 25;
   width: var(--wrap-width);
   position: relative;
@@ -193,6 +195,16 @@
   justify-content: flex-start;
   line-height: 175%;
 }
+
+
+
+/* Guide */
+
+.guide {
+  padding-top: 8rem;
+}
+
+.guide .section {}
 
 
 

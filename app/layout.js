@@ -17,20 +17,10 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-
-        <link
-          rel="stylesheet"
-          href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.css"
-        />
-
-
       </Head>
 
       <body>
         {children}
-
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8708861413425372"
-          crossorigin="anonymous" />
       </body>
 
     </html>
