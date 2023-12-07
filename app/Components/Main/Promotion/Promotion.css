@@ -24,7 +24,9 @@
   gap: 1.4rem;
   background-color: var(--nav-bg-color);
   transition: var(--theme-change-transition);
-  padding: 0.6rem 0.8rem;
+  padding: 0.6rem 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   border-radius: 0.6rem;
 }
 
@@ -32,7 +34,7 @@
   background-image: url("/assets/channel_logo.jpg");
   background-size: cover;
   background-position: center;
-  height: 4.4rem;
+  height: 3rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
 }
@@ -41,7 +43,7 @@
   color: var(--general-font-color);
   font-family: var(--general-font-family);
   transition: var(--theme-change-transition);
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .promo_link {
@@ -103,16 +105,27 @@
   color: var(--fill);
 }
 
+.promo_link a .link .icon .text {
+  color: var(--general-font-color);
+  font-family: var(--general-font-family);
+  transition: var(--theme-change-transition);
+}
 
 
 @media screen and (max-width: 768px) {
 
+  .promo_link {
+    flex-direction: column;
+    gap: 0.6rem 0;
+  }
+
   .channel_link {
+    margin-top: 2rem;
     gap: 1rem;
   }
 
   .channel_link .channel_logo {
-    height: 3.8rem;
+    height: 2.6rem;
   }
 
   .channel_link .channel_name {

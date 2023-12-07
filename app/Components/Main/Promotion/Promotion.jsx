@@ -12,12 +12,15 @@ const PromoLink = ({ text, link, Icon, name, icon_fill }) => {
 
       <a href={link} target="blank">
         <div className="link">
+
           <div className="icon"
             style={{
               "--fill": icon_fill
             }}
           >{Icon}</div>
-          {name}
+
+          <div className="text">{name}</div>
+
         </div>
       </a>
 
