@@ -85,7 +85,7 @@ const SearchMakerCard = ({
         let close_time = get_delay() - 200;
 
         if (i % 2 === 0) {
-          url = `https://www.bing.com/search?q=${query}&form=QBLH&sp=-1&ghc=1&lq=0&pq=${query.slice(0, query.length - 2)}&sc=11-4&qs=n&sk=&cvid=${cvid}&ghsh=0&ghacc=0&ghpl=`;
+          url = `https://www.bing.com/news/search?q=${query}&qs=n&form=QBNT&sp=-1&lq=0&pq=${query.slice(0, query.length - 2)}&sc=10-5&sk=&cvid=${cvid}=0&ghacc=0&ghpl=`;
           close_time = close_time / 1.3;
         }
         else {
